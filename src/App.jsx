@@ -19,7 +19,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-// Check for API key on mount
+ // Check for API key on mount
 useEffect(() => {
   // First check for environment variable
   const envKey = process.env.REACT_APP_OPENROUTER_API_KEY;
@@ -154,6 +154,5 @@ useEffect(() => {
     </div>
   );
 }
-
 
 export default App;
