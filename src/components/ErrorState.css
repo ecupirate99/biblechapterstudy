@@ -1,0 +1,14 @@
+/* components/ErrorState.css */
+.error-container {
+  background-color: #fff5f5;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 2px solid #feb2b2;
+}
+
+.error-text {
+  color: #c53030;
+  margin: 0;
+  line-height: 1.6;
+}

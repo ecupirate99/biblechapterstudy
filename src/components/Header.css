@@ -1,0 +1,28 @@
+/* components/Header.css */
+.header-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  color: #2c3e50;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+.header-subtitle {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin: 0;
+}
+
+.change-key-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: #74b9ff;
+  border: 1px solid #74b9ff;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
