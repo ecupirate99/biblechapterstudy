@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Bible Companion – Chapter by Chapter Study for Teens",
   "main": "index.js",
+"engines": {
+	"nodes": "18.x"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
