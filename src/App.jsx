@@ -19,15 +19,23 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Check for API key on mount
-  useEffect(() => {
+// Check for API key on mount
+useEffect(() => {
+  // First check for environment variable
+  const envKey = process.env.REACT_APP_OPENROUTER_API_KEY;
+  
+  if (envKey) {
+    setApiKey(envKey);
+  } else {
+    // Fall back to localStorage
     const storedKey = localStorage.getItem("openrouter_api_key");
     if (storedKey) {
       setApiKey(storedKey);
     } else {
       setShowApiKeyModal(true);
     }
-  }, []);
+  }
+}, []);
 
   // Handle API key submission
   const handleSaveApiKey = (key) => {
@@ -146,5 +154,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
